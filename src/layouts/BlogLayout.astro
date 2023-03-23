@@ -1,0 +1,113 @@
+---
+const { title } = Astro.props.frontmatter || Astro.props
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      data-hid="description"
+      name="description"
+      content="『だいどんでんがえし』はhanamizunoのブログです。"
+    />
+    <meta
+      data-hid="og:site_name"
+      property="og:site_name"
+      content="だいどんでんがえし"
+    />
+    <meta data-hid="og:type" property="og:type" content="website" /><meta
+      data-hid="og:url"
+      property="og:url"
+      content="https://hanamizuno.net"
+    />
+    <meta
+      data-hid="og:title"
+      property="og:title"
+      content="だいどんでんがえし"
+    />
+    <meta
+      data-hid="og:description"
+      property="og:description"
+      content="だいどんでんがえし"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hanamizno_" />
+    <title>{title} | だいどんでんがえし</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>だいどんでんがえしaaaaaaaaaa</h1>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <aside>
+        <p>&copy;&nbsp;hanamizno</p>
+      </aside>
+    </footer>
+  </body>
+</html>
+<style>
+  html {
+    background-color: #111;
+  }
+  body {
+    background-color: #222;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: #bbd;
+  }
+  header {
+    background-color: #111;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  h2 {
+    border-bottom: solid #ccc 1px;
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    color: red;
+  }
+  main {
+  }
+  section,
+  nav,
+  aside {
+    margin: auto;
+    max-width: 64rem;
+  }
+  section {
+    padding: 4rem 1rem;
+  }
+  .hero {
+    background-image: url(/images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: calc(40vh - 27rem);
+    padding: 12rem 0;
+  }
+  table {
+  }
+  th,
+  td {
+    min-width: 4rem;
+    padding: 0.5rem;
+  }
+  footer {
+    background-color: #111;
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+</style>
